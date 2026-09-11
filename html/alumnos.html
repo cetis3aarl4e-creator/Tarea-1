@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Alumnos</title>
+
+    <link rel="stylesheet" href="../css/alumno.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Registro de Alumnos</h1>
+
+        <form id="formulario">
+
+            <label for="numeroControl">Numero de control</label>
+
+            <input type="text"
+                   id="numeroControl"
+                   placeholder="Ejemplo: 21430001 o B21430001"
+                   maxlength="20"
+                   autocomplete="off"
+                   required>
+
+            <label for="apellidoPaterno">Apellido paterno</label>
+
+            <input type="text"
+                   id="apellidoPaterno"
+                   placeholder="Escribe el apellido paterno"
+                   maxlength="40"
+                   autocomplete="off"
+                   required>
+
+            <label for="apellidoMaterno">Apellido materno</label>
+
+            <input type="text"
+                   id="apellidoMaterno"
+                   placeholder="Escribe el apellido materno"
+                   maxlength="40"
+                   autocomplete="off"
+                   required>
+
+            <label for="nombre">Nombre</label>
+
+            <input type="text"
+                   id="nombre"
+                   placeholder="Escribe el nombre"
+                   maxlength="40"
+                   autocomplete="off"
+                   required>
+
+            <label for="carrera">Carrera</label>
+
+            <input type="text"
+                   id="carrera"
+                   placeholder="Escribe la carrera"
+                   maxlength="60"
+                   autocomplete="off"
+                   required>
+
+            <button type="submit">
+                Guardar
+            </button>
+
+        </form>
+
+        <h2>Alumnos registrados</h2>
+
+        <p id="mensaje" class="mensaje"></p>
+
+        <div id="lista"></div>
+
+    </main>
+
+    <script src="../js/alumnos.js"></script>
+
+</body>
+
+</html>
